@@ -1,6 +1,8 @@
-const express = 'express';
-
+const express = require('express');
 const server = express();
+
+// Set logger here
+// server.use() // <= logger
 
 server.get('/', (req, res) => {
   res.send(`<h2>Let's write some middleware!</h2>`)
